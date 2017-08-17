@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,27 +19,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAK-tD-CjS" customClass="ColorfulQRCodeView" customModule="ColorfulQRCode" customModuleProvider="target">
-                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="49.5" y="56" width="277.5" height="277.5"/>
+                                <color key="backgroundColor" red="0.4748806424" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Yio-oi-l98"/>
-                                    <constraint firstAttribute="height" constant="240" id="z47-Tu-l0w"/>
+                                    <constraint firstAttribute="width" secondItem="TAK-tD-CjS" secondAttribute="height" multiplier="1:1" id="Foe-OE-AgA"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XV-Ri-A9J" customClass="ColorfulQRCodeMetalView" customModule="ColorfulQRCode" customModuleProvider="target">
+                                <rect key="frame" x="49.5" y="369.5" width="277.5" height="277.5"/>
+                                <color key="backgroundColor" red="0.46378580729166669" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5XV-Ri-A9J" secondAttribute="height" id="6xa-so-4wo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用CALayer遮罩技术" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-Lz-G4y">
+                                <rect key="frame" x="49.5" y="34" width="325.5" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用Metal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKk-uN-YZh">
+                                <rect key="frame" x="49.5" y="347.5" width="325.5" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TAK-tD-CjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rlo-B7-FNI"/>
-                            <constraint firstItem="TAK-tD-CjS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m4L-7m-ptS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5XV-Ri-A9J" secondAttribute="bottom" constant="20" id="1CO-KM-8st"/>
+                            <constraint firstItem="MKk-uN-YZh" firstAttribute="top" secondItem="TAK-tD-CjS" secondAttribute="bottom" constant="14" id="5oZ-nZ-pyv"/>
+                            <constraint firstItem="TAK-tD-CjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DEa-xC-0xp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKk-uN-YZh" secondAttribute="trailing" id="FKB-eA-I2s"/>
+                            <constraint firstItem="TAK-tD-CjS" firstAttribute="top" secondItem="Ud1-Lz-G4y" secondAttribute="bottom" constant="4" id="ceO-iO-0yc"/>
+                            <constraint firstItem="TAK-tD-CjS" firstAttribute="height" secondItem="5XV-Ri-A9J" secondAttribute="height" id="htY-Z7-q9z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ud1-Lz-G4y" secondAttribute="trailing" id="jr9-fJ-J5n"/>
+                            <constraint firstItem="MKk-uN-YZh" firstAttribute="leading" secondItem="5XV-Ri-A9J" secondAttribute="leading" id="pPb-dg-MMy"/>
+                            <constraint firstItem="5XV-Ri-A9J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDm-yw-bvY"/>
+                            <constraint firstItem="5XV-Ri-A9J" firstAttribute="top" secondItem="MKk-uN-YZh" secondAttribute="bottom" constant="4" id="rIz-AG-4eL"/>
+                            <constraint firstItem="Ud1-Lz-G4y" firstAttribute="leading" secondItem="TAK-tD-CjS" secondAttribute="leading" id="uF6-LF-LAL"/>
+                            <constraint firstItem="Ud1-Lz-G4y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="34" id="ywv-rw-RS8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="qrcodeMetalView" destination="5XV-Ri-A9J" id="6V8-no-QE9"/>
                         <outlet property="qrcodeView" destination="TAK-tD-CjS" id="ZQx-US-J8F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="155.17241379310346"/>
         </scene>
     </scenes>
 </document>

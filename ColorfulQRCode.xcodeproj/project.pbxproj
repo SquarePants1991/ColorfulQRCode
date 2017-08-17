@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D30EE54C1F42E5580059A061 /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = D30EE54B1F42E5580059A061 /* qrcode.png */; };
+		D30EE54E1F42FB500059A061 /* ColorfulQRCodeMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EE54D1F42FB500059A061 /* ColorfulQRCodeMetalView.swift */; };
+		D30EE5501F42FD010059A061 /* qrcode.metal in Sources */ = {isa = PBXBuildFile; fileRef = D30EE54F1F42FD010059A061 /* qrcode.metal */; };
 		D347E7AB1F42D89D00A481BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347E7AA1F42D89D00A481BE /* AppDelegate.swift */; };
 		D347E7AD1F42D89D00A481BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347E7AC1F42D89D00A481BE /* ViewController.swift */; };
 		D347E7B01F42D89D00A481BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D347E7AE1F42D89D00A481BE /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		D30EE54B1F42E5580059A061 /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode.png; sourceTree = "<group>"; };
+		D30EE54D1F42FB500059A061 /* ColorfulQRCodeMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulQRCodeMetalView.swift; sourceTree = "<group>"; };
+		D30EE54F1F42FD010059A061 /* qrcode.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = qrcode.metal; sourceTree = "<group>"; };
 		D347E7A71F42D89D00A481BE /* ColorfulQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorfulQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D347E7AA1F42D89D00A481BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D347E7AC1F42D89D00A481BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				D347E7B31F42D89D00A481BE /* LaunchScreen.storyboard */,
 				D347E7B61F42D89D00A481BE /* Info.plist */,
 				D347E7BC1F42DD0A00A481BE /* ColorfulQRCodeView.swift */,
+				D30EE54D1F42FB500059A061 /* ColorfulQRCodeMetalView.swift */,
+				D30EE54F1F42FD010059A061 /* qrcode.metal */,
 			);
 			path = ColorfulQRCode;
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30EE5501F42FD010059A061 /* qrcode.metal in Sources */,
 				D347E7AD1F42D89D00A481BE /* ViewController.swift in Sources */,
 				D347E7BD1F42DD0A00A481BE /* ColorfulQRCodeView.swift in Sources */,
+				D30EE54E1F42FB500059A061 /* ColorfulQRCodeMetalView.swift in Sources */,
 				D347E7AB1F42D89D00A481BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,11 @@ class ColorfulQRCodeView: UIView {
     
     lazy var gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer.init()
-        layer.colors = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.cyan.cgColor]
+        layer.colors = [
+            UIColor.init(red: 0x2a / 255.0, green: 0x9c / 255.0, blue: 0x1f / 255.0, alpha: 1.0).cgColor,
+            UIColor.init(red: 0xe6 / 255.0, green: 0xcd / 255.0, blue: 0x27 / 255.0, alpha: 1.0).cgColor,
+            UIColor.init(red: 0xe6 / 255.0, green: 0x27 / 255.0, blue: 0x57 / 255.0, alpha: 1.0).cgColor
+        ]
         self.layer.addSublayer(layer)
         layer.frame = self.bounds
         return layer
@@ -26,6 +30,11 @@ class ColorfulQRCodeView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = UIColor.white
+    }
+    
+    func syncFrame() {
+        self.maskLayer.frame = self.bounds
+        self.gradientLayer.frame = self.bounds
     }
 
     // 设置黑白二维码图片

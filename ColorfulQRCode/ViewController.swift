@@ -11,13 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var qrcodeView: ColorfulQRCodeView!
+    @IBOutlet weak var qrcodeMetalView: ColorfulQRCodeMetalView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.init(white: 0.6, alpha: 1.0)
+        self.view.backgroundColor = UIColor.init(white: 0.85, alpha: 1.0)
         if let image = UIImage.init(named: "qrcode.png") {
             qrcodeView.setQRCodeImage(qrcodeImage: image)
+            qrcodeMetalView.setQRCodeImage(qrcodeImage: image)
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        qrcodeView.syncFrame()
+        qrcodeMetalView.syncFrame()
     }
 
 }

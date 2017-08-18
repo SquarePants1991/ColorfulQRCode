@@ -19,51 +19,69 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAK-tD-CjS" customClass="ColorfulQRCodeView" customModule="ColorfulQRCode" customModuleProvider="target">
-                                <rect key="frame" x="49.5" y="56" width="277.5" height="277.5"/>
+                                <rect key="frame" x="104.5" y="278.5" width="166" height="166"/>
                                 <color key="backgroundColor" red="0.4748806424" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TAK-tD-CjS" secondAttribute="height" multiplier="1:1" id="Foe-OE-AgA"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XV-Ri-A9J" customClass="ColorfulQRCodeMetalView" customModule="ColorfulQRCode" customModuleProvider="target">
-                                <rect key="frame" x="49.5" y="369.5" width="277.5" height="277.5"/>
+                                <rect key="frame" x="104.5" y="480.5" width="166" height="166.5"/>
                                 <color key="backgroundColor" red="0.46378580729166669" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5XV-Ri-A9J" secondAttribute="height" id="6xa-so-4wo"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用CALayer遮罩技术" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-Lz-G4y">
-                                <rect key="frame" x="49.5" y="34" width="325.5" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用Metal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKk-uN-YZh">
-                                <rect key="frame" x="49.5" y="347.5" width="325.5" height="18"/>
+                                <rect key="frame" x="104.5" y="458.5" width="270.5" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用CALayer遮罩技术" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-Lz-G4y">
+                                <rect key="frame" x="104.5" y="256.5" width="270.5" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用CALayer遮罩技术OC版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B07-Ae-gHi">
+                                <rect key="frame" x="104.5" y="54" width="270.5" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9W-GV-9h2" customClass="ColorfulQRCodeOCVerView">
+                                <rect key="frame" x="104.5" y="76" width="166.5" height="166.5"/>
+                                <color key="backgroundColor" red="0.4748806424" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5XV-Ri-A9J" secondAttribute="bottom" constant="20" id="1CO-KM-8st"/>
+                            <constraint firstItem="P9W-GV-9h2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2I9-YS-OaL"/>
+                            <constraint firstItem="B07-Ae-gHi" firstAttribute="leading" secondItem="P9W-GV-9h2" secondAttribute="leading" id="54C-wV-YBU"/>
                             <constraint firstItem="MKk-uN-YZh" firstAttribute="top" secondItem="TAK-tD-CjS" secondAttribute="bottom" constant="14" id="5oZ-nZ-pyv"/>
                             <constraint firstItem="TAK-tD-CjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DEa-xC-0xp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKk-uN-YZh" secondAttribute="trailing" id="FKB-eA-I2s"/>
+                            <constraint firstItem="Ud1-Lz-G4y" firstAttribute="top" secondItem="P9W-GV-9h2" secondAttribute="bottom" constant="14" id="Img-fh-UIL"/>
+                            <constraint firstItem="P9W-GV-9h2" firstAttribute="width" secondItem="P9W-GV-9h2" secondAttribute="height" multiplier="1:1" id="Np1-sR-TS9"/>
                             <constraint firstItem="TAK-tD-CjS" firstAttribute="top" secondItem="Ud1-Lz-G4y" secondAttribute="bottom" constant="4" id="ceO-iO-0yc"/>
+                            <constraint firstItem="B07-Ae-gHi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="dg1-aD-404"/>
                             <constraint firstItem="TAK-tD-CjS" firstAttribute="height" secondItem="5XV-Ri-A9J" secondAttribute="height" id="htY-Z7-q9z"/>
+                            <constraint firstItem="P9W-GV-9h2" firstAttribute="top" secondItem="B07-Ae-gHi" secondAttribute="bottom" constant="4" id="iIY-xo-mEF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B07-Ae-gHi" secondAttribute="trailing" id="jkS-xB-QOz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ud1-Lz-G4y" secondAttribute="trailing" id="jr9-fJ-J5n"/>
                             <constraint firstItem="MKk-uN-YZh" firstAttribute="leading" secondItem="5XV-Ri-A9J" secondAttribute="leading" id="pPb-dg-MMy"/>
                             <constraint firstItem="5XV-Ri-A9J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDm-yw-bvY"/>
                             <constraint firstItem="5XV-Ri-A9J" firstAttribute="top" secondItem="MKk-uN-YZh" secondAttribute="bottom" constant="4" id="rIz-AG-4eL"/>
+                            <constraint firstItem="P9W-GV-9h2" firstAttribute="height" secondItem="TAK-tD-CjS" secondAttribute="height" id="skc-Mw-QJv"/>
                             <constraint firstItem="Ud1-Lz-G4y" firstAttribute="leading" secondItem="TAK-tD-CjS" secondAttribute="leading" id="uF6-LF-LAL"/>
-                            <constraint firstItem="Ud1-Lz-G4y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="34" id="ywv-rw-RS8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="qrcodeMetalView" destination="5XV-Ri-A9J" id="6V8-no-QE9"/>
+                        <outlet property="qrcodeOCVerView" destination="P9W-GV-9h2" id="wdf-3Y-9Zi"/>
                         <outlet property="qrcodeView" destination="TAK-tD-CjS" id="ZQx-US-J8F"/>
                     </connections>
                 </viewController>

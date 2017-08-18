@@ -91,6 +91,8 @@
         CFRelease(cgMaskImage);
         UIGraphicsPopContext();
         CFRelease(imageContext);
+        
+        free(imageData);
         return maskImage;
     }
     return nil;
